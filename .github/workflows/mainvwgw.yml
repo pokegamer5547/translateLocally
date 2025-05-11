@@ -38,7 +38,7 @@ jobs:
             make -j$(nproc)
 
       - name: Upload AArch64 binary
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: translatelocally-aarch64
           path: build/translateLocally
